@@ -3,7 +3,7 @@
   "name": "secret-santa-backend",
   "version": "1.0.0",
   "description": "standalone backend nodejs repo for secret santa",
-  "repository": "https://github.com/Sathish-Kumar-R6/secret-santa",
+  "repository": "https://github.com/Sathish-Kumar-R6/secret-santa-backend",
   "author": "sathishkumar",
   "license": "MIT",
   "scripts": {
