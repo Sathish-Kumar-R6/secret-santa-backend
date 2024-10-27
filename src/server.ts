@@ -8,12 +8,13 @@ import { loggerMiddleware } from "./lib/winston/winston";
 import healthCheckRouter from "./routes/health-check";
 import serveFavicon from "serve-favicon";
 import path from "path";
+import { apiRouter } from "./routes/main-route";
+import { PATHS } from "./constants";
 
 const app = express();
 
 app.use(express.json());
 app.use(serveFavicon(path.join(__dirname, "../public", "favicon.ico")));
-console.log("__dirname", __dirname);
 app.use(express.urlencoded({ extended: true }));
 app.use(loggerMiddleware);
 
@@ -26,6 +27,7 @@ app.use(
 );
 
 app.use(healthCheckRouter);
+app.use(PATHS.Base, apiRouter);
 
 app.get("/", (_req, res) => {
   res.json({ message: "server started" });
