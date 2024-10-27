@@ -128,4 +128,12 @@ enum HttpStatusCodes {
   NETWORK_AUTHENTICATION_REQUIRED = 511,
 }
 
-export { NodeEnvs, HttpStatusCodes };
+export type Immutable<T> = {
+  readonly [K in keyof T]: Immutable<T[K]>;
+};
+
+const PATHS = {
+  Base: "/secret-santa-be/api",
+};
+
+export { NodeEnvs, HttpStatusCodes, PATHS };
