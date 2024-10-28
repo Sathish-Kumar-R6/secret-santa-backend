@@ -2193,6 +2193,11 @@ express-async-errors@^3.1.1:
   resolved "https://registry.yarnpkg.com/express-async-errors/-/express-async-errors-3.1.1.tgz#6053236d61d21ddef4892d6bd1d736889fc9da41"
   integrity sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng==
 
+express-list-endpoints@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/express-list-endpoints/-/express-list-endpoints-7.1.0.tgz#9200fdef65291c2dd863ff1244de979b4aa4d05a"
+  integrity sha512-7FyKxABfkRC0t6B6btxlAcFr0WrpPAL12MFAGhAxoIi/OyphxVQzVmyuWbcNxEApBmNzzgt2khjlqj/3wyHMMA==
+
 express-validator@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/express-validator/-/express-validator-7.2.0.tgz#f6077758732d52e2365bb983b1abaca51bbefba6"

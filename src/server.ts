@@ -10,6 +10,7 @@ import serveFavicon from "serve-favicon";
 import path from "path";
 import { apiRouter } from "./routes/main-route";
 import { PATHS } from "./constants";
+import expressListEndpoints from "express-list-endpoints";
 
 const app = express();
 
@@ -31,6 +32,11 @@ app.use(PATHS.Base, apiRouter);
 
 app.get("/", (_req, res) => {
   res.json({ message: "server started" });
+});
+
+app.get("/routes", (_req, res) => {
+  const endpoints = expressListEndpoints(app);
+  res.json(endpoints);
 });
 
 app.use(notFoundMiddleware);

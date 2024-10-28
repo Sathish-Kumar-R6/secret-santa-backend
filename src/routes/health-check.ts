@@ -3,7 +3,7 @@ import { Router } from "express";
 
 const healthCheckRouter = Router();
 
-healthCheckRouter.use("/health-check", (_, res) => {
+healthCheckRouter.get("/health-check", (_, res) => {
   res.status(HttpStatusCodes.OK).json({ message: "Hello from SANTA 🎅" });
 });
 
