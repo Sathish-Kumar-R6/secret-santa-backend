@@ -1,7 +1,7 @@
 {
   "main": "./src/index.ts",
   "name": "secret-santa-backend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "standalone backend nodejs repo for secret santa",
   "repository": "https://github.com/Sathish-Kumar-R6/secret-santa-backend",
   "author": "sathishkumar",
