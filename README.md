@@ -39,9 +39,9 @@
      ```bash
      yarn dev
      ```
-   - Server runs on [http://localhost:4000](http://localhost:4000)
-   - Open [http://localhost:4000/health-check](http://localhost:4000/health-check) in your browser to check the server health status.
+   - Server runs on [`http://localhost:4000`](http://localhost:4000)
+   - Open [`http://localhost:4000/health-check`](http://localhost:4000/health-check) in your browser to check the server health status.
 
 5. **API Routes**:
-   - The base API URL is `http://localhost:4000/secret-santa-be/api/v1`.
+   - To see all the visible routes [`http://localhost:4000/routes`](http://localhost:4000/routes).
    - Use the `GET /health-check` endpoint to verify server health.
