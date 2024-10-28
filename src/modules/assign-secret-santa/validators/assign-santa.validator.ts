@@ -10,7 +10,7 @@ const uploadFileValidation = upload.fields([
   { name: "previousAssignmentsFile", maxCount: 1 },
 ]);
 
-const validateFileUploads = (
+export const validateFileUploads = (
   req: Request,
   res: Response,
   next: NextFunction,

@@ -8,7 +8,6 @@ export const handleValidationErrors = (
   next: NextFunction,
 ) => {
   const errors = validationResult(req);
-  console.log("errors", errors);
   if (!errors.isEmpty()) {
     const formattedErrorArray = errors.array().map((errItem) => {
       const { msg, ...rest } = errItem;
